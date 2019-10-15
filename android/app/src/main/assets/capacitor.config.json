@@ -1,0 +1,7 @@
+{
+  "appId": "app.devoverflow.whatsappclone",
+  "appName": "WhatsAppClone",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
