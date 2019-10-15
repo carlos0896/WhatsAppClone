@@ -13,9 +13,9 @@
 </ion-header>
 <ion-content>
   <div class="camera-box">
-      <ion-button disabled>
-        <ion-icon slot="icon-only" name="camera"></ion-icon>
-      </ion-button>
+    <ion-button disabled>
+      <ion-icon slot="icon-only" name="camera"></ion-icon>
+    </ion-button>
   </div>
   <super-tabs>
     <super-tabs-toolbar slot="top">
@@ -30,7 +30,9 @@
       </super-tab-button>
     </super-tabs-toolbar>
     <super-tabs-container>
-      <super-tab>This is home 1</super-tab>
+      <super-tab>
+        <ion-nav [root]="chatsPage"></ion-nav>
+      </super-tab>
       <super-tab>
         <ion-nav [root]="statePage"></ion-nav>
       </super-tab>

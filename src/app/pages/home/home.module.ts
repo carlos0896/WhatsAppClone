@@ -1,3 +1,4 @@
+import { ChatsPage } from './../chats/chats.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -12,7 +13,8 @@ import { StatePage } from '../state/state.page';
 @NgModule({
   entryComponents: [
     CallsPage,
-    StatePage
+    StatePage,
+    ChatsPage
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { StatePage } from '../state/state.page';
   declarations: [
     HomePage,
     CallsPage,
-    StatePage
+    StatePage,
+    ChatsPage
   ]
 })
 export class HomePageModule {}

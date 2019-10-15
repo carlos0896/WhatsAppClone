@@ -1,3 +1,4 @@
+import { ChatsPage } from './../chats/chats.page';
 import { CallsPage } from './../calls/calls.page';
 import { StatePage } from './../state/state.page';
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -12,6 +13,7 @@ export class HomePage implements OnInit {
 
   statePage = StatePage;
   callsPage = CallsPage;
+  chatsPage = ChatsPage;
 
   constructor() {
   }

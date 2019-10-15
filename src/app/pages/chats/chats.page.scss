@@ -1,0 +1,19 @@
+ion-item {
+    ion-avatar {
+        width: 61px;
+        height: 61px;
+    }
+    ion-label {
+        h2 {
+            font-weight: bold;
+        }
+        p {
+            ion-icon {
+                padding-right: 2px;
+                position: relative;
+                top: 2px;
+                font-size: 1.3em;
+            }
+        }
+    }
+}

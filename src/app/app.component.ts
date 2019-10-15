@@ -2,7 +2,19 @@ import { Component } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+// Events (iOS only)
+window.addEventListener('statusTap', function () {
+  console.log("statusbar tapped");
+});
+
+//API
+import {
+  Plugins,
+  StatusBarStyle,
+} from '@capacitor/core';
+
+const { StatusBar } = Plugins;
 
 @Component({
   selector: 'app-root',
@@ -12,15 +24,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   constructor(
     private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private splashScreen: SplashScreen
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
+      StatusBar.setBackgroundColor({
+        color: '#054c44'
+      });
       this.splashScreen.hide();
     });
   }
