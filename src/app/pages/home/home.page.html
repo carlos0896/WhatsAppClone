@@ -1,0 +1,37 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>WhatsApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <super-tabs>
+    <super-tabs-toolbar slot="top">
+      <super-tab-button>
+        <ion-label>CHATS</ion-label>
+      </super-tab-button>
+      <super-tab-button>
+        <ion-label>ESTADOS</ion-label>
+      </super-tab-button>
+      <super-tab-button>
+        <ion-label>LLAMADAS</ion-label>
+      </super-tab-button>
+    </super-tabs-toolbar>
+    <super-tabs-container>
+      <super-tab>This is home 1</super-tab>
+      <super-tab>
+        <ion-nav [root]="statePage"></ion-nav>
+      </super-tab>
+      <super-tab>
+        <ion-nav [root]="callsPage"></ion-nav>
+      </super-tab>
+    </super-tabs-container>
+  </super-tabs>
+</ion-content>
