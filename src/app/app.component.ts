@@ -31,9 +31,11 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      StatusBar.setBackgroundColor({
-        color: '#054c44'
-      });
+      if(this.platform.is("capacitor")) {
+        StatusBar.setBackgroundColor({
+          color: '#054c44'
+        });
+      }
       this.splashScreen.hide();
     });
   }
