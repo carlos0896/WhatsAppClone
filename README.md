@@ -1,5 +1,7 @@
 # WhatsAppClone
 
+> Ionic 4 project
+
 Run `npm install` to download the packages
 
 Run `ionic serve` to start the development server
