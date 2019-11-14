@@ -1,4 +1,3 @@
-import { ChatsPage } from './../chats/chats.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -7,14 +6,15 @@ import { RouterModule } from '@angular/router';
 import { SuperTabsModule } from '@ionic-super-tabs/angular';
 
 import { HomePage } from './home.page';
-import { CallsPage } from '../calls/calls.page';
-import { StatePage } from '../state/state.page';
+import { ChatsComponent } from 'src/app/components/chats/chats.component';
+import { StateComponent } from 'src/app/components/state/state.component';
+import { CallsComponent } from 'src/app/components/calls/calls.component';
 
 @NgModule({
   entryComponents: [
-    CallsPage,
-    StatePage,
-    ChatsPage
+    ChatsComponent,
+    StateComponent,
+    CallsComponent
   ],
   imports: [
     CommonModule,
@@ -30,9 +30,9 @@ import { StatePage } from '../state/state.page';
   ],
   declarations: [
     HomePage,
-    CallsPage,
-    StatePage,
-    ChatsPage
+    ChatsComponent,
+    StateComponent,
+    CallsComponent
   ]
 })
 export class HomePageModule {}
