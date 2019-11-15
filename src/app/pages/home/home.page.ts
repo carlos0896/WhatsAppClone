@@ -1,8 +1,8 @@
-import { ChatsPage } from './../chats/chats.page';
-import { CallsPage } from './../calls/calls.page';
-import { StatePage } from './../state/state.page';
-import { Component, ViewChild, OnInit } from '@angular/core';
-import { SuperTabs } from '@ionic-super-tabs/angular';
+
+import { Component, OnInit } from '@angular/core';
+import { ChatsComponent } from 'src/app/components/chats/chats.component';
+import { StateComponent } from 'src/app/components/state/state.component';
+import { CallsComponent } from 'src/app/components/calls/calls.component';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +11,9 @@ import { SuperTabs } from '@ionic-super-tabs/angular';
 })
 export class HomePage implements OnInit {
 
-  statePage = StatePage;
-  callsPage = CallsPage;
-  chatsPage = ChatsPage;
+  statePage = StateComponent;
+  callsPage = CallsComponent;
+  chatsPage = ChatsComponent;
 
   constructor() {
   }
